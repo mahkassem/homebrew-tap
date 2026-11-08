@@ -1,25 +1,25 @@
 class Fairlead < Formula
   desc "Guardrails and a guided path for coding agents: rules enforced as the agent works, tests scoped to what a change can reach, capped project memory, and KPIs."
   homepage "https://github.com/mahkassem/fairlead"
-  version "0.15.0"
+  version "0.15.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.0/fairlead-aarch64-apple-darwin.tar.xz"
-      sha256 "e700bad07976cc7ca89fd34e93a8200a15e6b345f44f299e95d00b5f08e51dd0"
+      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.1/fairlead-aarch64-apple-darwin.tar.xz"
+      sha256 "9ca3f7e105d88b6ce753fc912ac7a00f6a2a337342ac9998662496e0e73a5b16"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.0/fairlead-x86_64-apple-darwin.tar.xz"
-      sha256 "4c9af2398766e23f7f2469c1aec924b38eaf13afd187bea2755d2f79f2109f35"
+      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.1/fairlead-x86_64-apple-darwin.tar.xz"
+      sha256 "ec4efce1d885ecb6ec96302f342094a91398d36aac9ded29179e9e7fd5c42cd1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.0/fairlead-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9a4779ffedd5ab9f4f4847d5df5d11cccb27e7d93d9c1cb05325d0b424d0a596"
+      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.1/fairlead-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0c7abd897136260d6fc64fdfbab94b60384cb6d2941d20a0f073b4f51f1d4055"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.0/fairlead-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ca232ed1daea1002c881ab31df07571ad4c35e062685301cd064c0773728b63f"
+      url "https://github.com/mahkassem/fairlead/releases/download/v0.15.1/fairlead-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "48788fce81255670d7656e373d5dc4bea7cde04504680efb2d41f052eb83d8c7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
